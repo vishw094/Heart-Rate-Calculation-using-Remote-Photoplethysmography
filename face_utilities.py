@@ -107,8 +107,8 @@ class Face_utilities():
         
         # compute center (x, y)-coordinates (i.e., the median point)
         # between the two eyes in the input image
-        eyesCenter = ((leftEyeCenter[0] + rightEyeCenter[0]) // 2,
-            (leftEyeCenter[1] + rightEyeCenter[1]) // 2)
+        eyesCenter = (int((leftEyeCenter[0] + rightEyeCenter[0]) // 2),
+            int((leftEyeCenter[1] + rightEyeCenter[1]) // 2))
         
         # grab the rotation matrix for rotating and scaling the face
         M = cv2.getRotationMatrix2D(eyesCenter, angle, scale)
@@ -220,7 +220,7 @@ class Face_utilities():
         '''
         if self.predictor is None:
             print("[INFO] load " + type + " facial landmarks model ...")
-            self.predictor = dlib.shape_predictor("../shape_predictor_" + type + "_face_landmarks.dat")
+            self.predictor = dlib.shape_predictor("shape_predictor_" + type + "_face_landmarks.dat")
             print("[INFO] Load model - DONE!")
         
         if frame is None:
