@@ -1,6 +1,7 @@
 # Heart-Rate-Calculation-using-Remote-Photoplethysmography
 This project calculates your Heart rate using a web camera using Remote Photoplethysmography following a Gaussian pyramid.
 
+<img width="592" height="534" alt="image" src="https://github.com/user-attachments/assets/e640d2d1-4c2d-4684-80d7-73b984a74440" />
 
 # Abstract
 - Heart Rate (HR) is one of the most important Physiological parameter and a vital indicator of people‘s physiological state
